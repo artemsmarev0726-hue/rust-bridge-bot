@@ -1,0 +1,70 @@
+{
+  "token": "ВСТАВЬ_ТОКЕН_ИЛИ_ЗАДАЙ_DISCORD_TOKEN",
+  "guildId": "ID_СЕРВЕРА_DISCORD",
+  "adminRoleIds": [],
+
+  "http": {
+    "host": "0.0.0.0",
+    "port": 3000,
+    "trustProxy": true
+  },
+
+  "api": {
+    "secret": "ПРИДУМАЙ_ИЛИ_ЗАДАЙ_API_SECRET",
+    "allowedIps": []
+  },
+
+  "presence": {
+    "enabled": true,
+    "frameSeconds": 5,
+    "countsRefreshSeconds": 30,
+    "type": "custom",
+    "frames": [
+      "👥 Участников: {members}",
+      "🟢 Онлайн: {online}",
+      "📢 Слежу <#1535258332745433118>",
+      "📣 Слежу <#1537829869449125988>"
+    ],
+    "serverOfflineText": ""
+  },
+
+  "outbox": {
+    "maxQueue": 5000,
+    "maxAgeHours": 48
+  },
+
+  "raid": {
+    "enabled": true,
+    "linkChannelId": "1535257267534823515",
+    "deleteCodeMessage": true,
+    "wrongCodeReply": true,
+    "linkRoleId": "",
+    "removeRoleOnUnlink": true,
+    "slashCommand": "link"
+  },
+
+  "twitch": {
+    "enabled": true,
+    "clientId": "TWITCH_CLIENT_ID",
+    "clientSecret": "TWITCH_CLIENT_SECRET",
+    "checkIntervalSec": 60,
+    "offlineConfirmChecks": 2,
+    "notifyChannelId": "ID_КАНАЛА_ДЛЯ_УВЕДОМЛЕНИЙ_О_СТРИМАХ",
+    "mentionOnStart": "",
+    "announceEnd": true,
+    "streamers": [
+      { "url": "https://www.twitch.tv/d03u", "steamId": "" }
+    ]
+  },
+
+  "commands": {
+    "twitch": "tw",
+    "stats": "stats",
+    "reset": "reset",
+    "top": "top",
+    "topEnabled": true,
+    "topEphemeral": false,
+    "topColor": "#2482ed",
+    "statsInChannel": true
+  }
+}
